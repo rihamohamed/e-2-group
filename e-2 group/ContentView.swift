@@ -24,7 +24,11 @@ struct ContentView: View {
                 textTile = "Welcome \(name)!"
             } label: {
                 Image("SubmitName")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    
             }
+            
         }
             
 
