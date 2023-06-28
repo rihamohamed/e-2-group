@@ -19,9 +19,7 @@ struct ContentView: View {
                 .font(.title)
                 .border(Color.indigo, width: 3)
                 .padding()
-        }
-          
-        VStack {
+       
             Button {
                 textTile = "Welcome \(name)!"
             } label: {
