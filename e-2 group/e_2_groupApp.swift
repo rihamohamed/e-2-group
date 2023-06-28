@@ -16,4 +16,4 @@ struct e_2_groupApp: App {
     }
 }
 
-    text("Hello User")
+
