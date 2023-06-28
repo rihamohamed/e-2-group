@@ -23,7 +23,7 @@ struct ContentView: View {
             Button {
                 textTile = "Welcome \(name)!"
             } label: {
-                Image("Scholar")
+                Image("SubmitName")
             }
         }
             
