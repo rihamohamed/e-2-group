@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name = ""
+    @State private var textTile = "What ur name"
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hi User!!")
-            Text("Test")
+            Text(textTile)
+            TextField("", text: $name)
+            .multilineTextAlignment(.center)
+            .font(.title)
+            .border(Color.indigo, width: 3)
+            .padding()
+            
+            Button {
+                    
+            } label: {
+                Image("Scholar")
+
+            }
+            
+
+            
+            
+            
         }
         .padding()
     }
