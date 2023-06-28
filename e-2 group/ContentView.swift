@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var name = ""
-    @State private var textTile = "What ur name"
+    @State private var textTile = "Enter Name"
     var body: some View {
         
         VStack {
@@ -17,15 +17,17 @@ struct ContentView: View {
             TextField("", text: $name)
                 .multilineTextAlignment(.center)
                 .font(.title)
-                .border(Color.indigo, width: 3)
+                .border(Color.gray, width: 3)
                 .padding()
        
             Button {
-                textTile = "Welcome \(name)!"
+                textTile = "Welcome to EcoGuide, \(name)!"
             } label: {
                 Image("SubmitName")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                
+                }
                     
             }
             
