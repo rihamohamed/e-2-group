@@ -36,14 +36,11 @@ struct ContentView: View {
                     
                 }
                     }
-    func NavigationStack() {
-        NavigationLink(destination: HomePage) {
-            Text("You've arrived")
-        }
+    
         
 }
 
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
