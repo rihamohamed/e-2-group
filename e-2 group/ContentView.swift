@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var textTile = "Enter Name"
     var body: some View {
         
+    
+        
         VStack {
             Text(textTile)
             TextField("", text: $name)

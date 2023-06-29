@@ -20,9 +20,9 @@ struct HomePage: View {
             } label: {
                 Image("HomeButtons")
                     .resizable()
-                    .frame(width: 245.0, height: 200.0)
+                    .frame(width: 225.0, height: 180.0)
                     .aspectRatio(contentMode: .fit)
-                    .offset(x: -90.0, y: -50.0)
+                    .offset(x: -90.0, y: -30.0)
                 
                 
                 
@@ -34,17 +34,30 @@ struct HomePage: View {
             } label: {
                 Image("HomeButtons")
                     .resizable()
-                    .frame(width: 245.0, height: 200.0)
+                    .frame(width: 225.0, height: 180.0)
                     .aspectRatio(contentMode: .fit)
-                    .offset(x: -90.0, y: 30.0)
+                    .offset(x: -90.0, y: 15.0)
             }
             
+            Button {
+            } label: {
+                Image("HomeButtons")
+                    .resizable()
+                    .frame(width: 225.0, height: 180.0)
+                    .aspect
+            }
         }
         
+        
+                
+            }
+        }
+        
+        
+struct HomePage_Previews: PreviewProvider {
+    static var previews: some View {
+        HomePage()
         
         
     }
 }
-        
-        
- 
