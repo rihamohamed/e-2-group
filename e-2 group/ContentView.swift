@@ -19,28 +19,31 @@ struct ContentView: View {
                 .font(.title)
                 .border(Color.gray, width: 3)
                 .padding()
-       
+          
             Button {
                 textTile = "Welcome to EcoGuide, \(name)!"
+
             } label: {
-                Image("SubmitName")
-                    .resizable()
+                Image("SubmitName").resizable()
                     .aspectRatio(contentMode: .fit)
                 
-                }
+                
+               
                     
-            }
-            
-        }
-            
+           
+                }
 
-            
-            
-            
+                    
+                }
+                    }
+    func NavigationStack() {
+        NavigationLink(destination: HomePage) {
+            Text("You've arrived")
         }
         
-    }
+}
 
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
