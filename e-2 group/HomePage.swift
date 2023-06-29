@@ -44,7 +44,18 @@ struct HomePage: View {
                 Image("HomeButtons")
                     .resizable()
                     .frame(width: 225.0, height: 180.0)
-                    .aspect
+                    .aspectRatio(contentMode: .fit)
+                    .offset(x: 90.0, y: -173.0)
+            }
+            
+            Button
+                .offset(x: -90.0, y: -173.0){
+            } label: {
+                Image("HomeButtons")
+                    .resizable()
+                    .frame(width: 225.0, height: 180.0)
+                    .aspectRatio(contentMode: .fit)
+                    .offset(x: -90.0, y: -173.0)
             }
         }
         
